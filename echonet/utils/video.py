@@ -26,7 +26,7 @@ import echonet
 @click.option("--pretrained/--random", default=True)
 @click.option("--weights", type=click.Path(exists=True, dir_okay=False), default=None)
 @click.option("--run_test/--skip_test", default=False)
-@click.option("--num_epochs", type=int, default=45)
+@click.option("--num_epochs", type=int, default=38)
 @click.option("--lr", type=float, default=1e-4)
 @click.option("--weight_decay", type=float, default=1e-4)
 @click.option("--lr_step_period", type=int, default=15)
@@ -34,7 +34,7 @@ import echonet
 @click.option("--period", type=int, default=2)
 @click.option("--num_train_patients", type=int, default=None)
 @click.option("--num_workers", type=int, default=4)
-@click.option("--batch_size", type=int, default=20)
+@click.option("--batch_size", type=int, default=14)
 @click.option("--device", type=str, default=None)
 @click.option("--seed", type=int, default=0)
 def run(
