@@ -251,6 +251,7 @@ def run(
 
         with torch.no_grad():
             with open(os.path.join(output, "size.csv"), "w") as g:
+                print("Code reached here")
                 g.write("Filename,Frame,Size,HumanLarge,HumanSmall,ComputerSmall\n")
                 for (x, (filenames, large_index, small_index), length) in tqdm.tqdm(dataloader):
                     # Run segmentation model on blocks of frames one-by-one
